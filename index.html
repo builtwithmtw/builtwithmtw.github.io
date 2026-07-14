@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MTW Apps</title>
+<meta name="description" content="MTW Apps — mobile apps for Android and iOS.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #16181d;
+    --muted: #5c6270;
+    --line: #e4e6eb;
+    --accent: #2f6df6;
+    --card: #f7f8fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1115;
+      --fg: #e8eaee;
+      --muted: #9aa1ae;
+      --line: #262a33;
+      --accent: #6f9bff;
+      --card: #161920;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 96px 0 56px; border-bottom: 1px solid var(--line); }
+  .logo {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 56px; height: 56px; border-radius: 14px;
+    background: var(--accent); color: #fff;
+    font-weight: 700; font-size: 20px; letter-spacing: .5px;
+    margin-bottom: 24px;
+  }
+  h1 { margin: 0 0 12px; font-size: 40px; line-height: 1.15; letter-spacing: -.02em; }
+  .tagline { margin: 0; color: var(--muted); font-size: 18px; }
+  main { padding: 56px 0 96px; }
+  h2 { font-size: 14px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 16px; }
+  .links { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  .links a {
+    display: block; padding: 16px 18px;
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    color: var(--fg); text-decoration: none; font-weight: 500;
+    transition: border-color .15s ease;
+  }
+  .links a:hover { border-color: var(--accent); }
+  .links span { display: block; font-weight: 400; font-size: 14px; color: var(--muted); margin-top: 2px; }
+  footer { padding: 32px 0 64px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">MTW</div>
+      <h1>MTW Apps</h1>
+      <p class="tagline">We build mobile apps for Android and iOS.</p>
+    </header>
+
+    <main>
+      <h2>Legal</h2>
+      <ul class="links">
+        <li>
+          <a href="/privacy-policy.html">
+            Privacy Policy
+            <span>How our apps handle your data.</span>
+          </a>
+        </li>
+      </ul>
+    </main>
+
+    <footer>
+      &copy; <span id="year">2026</span> MTW Apps. All rights reserved.
+    </footer>
+  </div>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
