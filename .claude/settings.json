@@ -10,7 +10,14 @@
       "Bash(git add *)",
       "Bash(git -c commit.gpgsign=false commit -m ' *)",
       "Bash(git rebase *)",
-      "Bash(git -c commit.gpgsign=false commit --amend -m ' *)"
+      "Bash(git -c commit.gpgsign=false commit --amend -m ' *)",
+      "Bash(gh repo *)",
+      "Bash(git remote *)",
+      "Bash(git push *)",
+      "Bash(gh pr create --base main --head dev --title 'Add app-ads.txt for AdMob seller verification' --body ' *)",
+      "Bash(gh pr *)",
+      "Bash(git fetch *)",
+      "Bash(git -c commit.gpgsign=false commit -q -m ' *)"
     ]
   }
 }
