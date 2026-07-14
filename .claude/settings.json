@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/developer/Downloads/Apps/mtwapps-site status --short --branch)",
+      "Bash(git -C /Users/developer/Downloads/Apps/mtwapps-site remote -v)",
+      "Bash(git -C /Users/developer/Downloads/Apps/mtwapps-site branch -a)",
+      "Bash(git -C /Users/developer/Downloads/Apps/mtwapps-site log --oneline -10)",
+      "Bash(set -e)",
+      "Bash(git rm *)",
+      "Bash(git add *)",
+      "Bash(git -c commit.gpgsign=false commit -m ' *)",
+      "Bash(git rebase *)",
+      "Bash(git -c commit.gpgsign=false commit --amend -m ' *)"
+    ]
+  }
+}
